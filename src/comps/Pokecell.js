@@ -1,5 +1,4 @@
 import classes from "./Pokecell.module.css";
-import PokemonList from "./PokemonList";
 import pokepics from "./pokemonData/pokepics.png";
 
 const Pokecell = ({ pokeClass, clickHandler }) => {
