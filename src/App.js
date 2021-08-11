@@ -1,11 +1,18 @@
 import './App.css';
 import PokemonList from './comps/PokemonList';
 import Details from './comps/Details';
+import Pokemon from './Pokemon';
 
 function App() {
 
   const clickHandler=(id)=>{
-    console.log(id)
+    fetch(`http://pokeapi.co/api/v2/pokemon/${id}/`)
+    .then(res => res.json())
+    .then(data => {
+      const pokemon = new Pokemon(data);
+      console.log(pokemon);
+    })
+    .catch(err => console.log(err));
   }
 
   return (
