@@ -1,12 +1,13 @@
 import classes from "./Details.module.css";
 
-const Details = () => {
+const Details = ({pokemon}) => {
+  const { id, name, image, type } = pokemon;
   return (
     <section className={classes.details}>
-      <img className={classes.image} alt=''/>
+      <img src={image} className={classes.image} alt='pokeimage'/>
       <div className={classes.wrapper}>
-        <h1 className={classes.name}></h1>
-        <p className={classes.char}></p>
+        <h1 className={classes.name}>ID: {id} {name}</h1>
+        <p className={classes.char}>Type: {type}</p>
       </div>
     </section>
   );
