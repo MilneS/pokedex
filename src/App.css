@@ -10,3 +10,12 @@
     border-radius: 10px;
     box-shadow: 0 14px 45px rgba(0, 0, 0, 0.22), 0 18px 45px rgba(0, 0, 0, 0.22);
 }
+.title{
+    text-align:center;
+    margin-top: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 196, 0);
+    font-size: 50px;
+    font-weight:bold;
+    -webkit-text-stroke:2.5px rgb(40, 116, 202);;
+}

@@ -9,7 +9,7 @@ function App() {
     pokemon: {}
   })
   const clickHandler=(id)=>{
-    fetch(`http://pokeapi.co/api/v2/pokemon/${id}/`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
     .then(res => res.json())
     .then(data => {
       const pokemons = new Pokemon(data);
@@ -20,10 +20,13 @@ function App() {
 
 
   return (
+    <>
+    <p className="title">Pokédex</p>
     <div className="App">
       <PokemonList clickHandler={clickHandler} />
       <Details pokemon={state.pokemon}/>
     </div>
+    </>
   );
 }
 
