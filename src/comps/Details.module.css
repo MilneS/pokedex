@@ -11,7 +11,7 @@
 }
 .image {
   width: 80%;
-  height: 150px;
+  height: 200px;
   margin: 10px auto;
   background-color: #585858;
   border: 15px solid #dedede;
@@ -35,15 +35,21 @@
 }
 
 .char {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 @media (max-width: 768px) {
   .image {
-    width: 90%;
     border: 8px solid #dedede;
+    height: 150px;
   }
   .name {
     font-size: 15px
+  }
+  .wrapper{
+    height: 55px;
+  }
+  .char {
+    font-size: 10px;
   }
 }
