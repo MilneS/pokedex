@@ -38,7 +38,7 @@
   font-size: 10px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 3768x) {
   .name {
     font-size: smaller;
   }
